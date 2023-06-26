@@ -38,6 +38,10 @@ img{
     justify-content: space-between;
 }
 
+.align-self{
+    align-self: center;
+}
+
 nav{
     align-self: center;
 }
@@ -74,6 +78,7 @@ a{
 /* ! 3 container */
 
 .container-full{
+    width: 100%;
     display: flex;
 }
 
@@ -122,6 +127,7 @@ p{
     width: 65%;
     padding-top: 25px;
 }
+
 .img-jumbo{
     margin-bottom: -65px
 }
@@ -152,7 +158,6 @@ label{
 .cards{
     width: calc(100% / 3 - 45px);
     border: 1px solid #8C8F9E ;
-    margin-right: 45px;
 }
 
 .title-card{
@@ -189,6 +194,7 @@ label{
     font-size: .8rem;
     padding: 8px 10px;
 }
+
 .shop-now{
     text-decoration:underline;
     color: blue;
@@ -230,6 +236,10 @@ h2{
     font-size: 2.5rem;
 }
 
+h3{
+    padding: 5px 10px;
+}
+
 .flag{
     font-size: .8rem;
     font-weight: bold;
@@ -242,4 +252,60 @@ h2{
 .text{
     font-size: .81rem;
     margin-bottom: 15px;
+}
+
+.full-card{
+    border: 1px solid #8C8F9E ;
+}
+
+.btn-card-full{
+    font-size: .75rem;
+    background-color:#0061FF ;
+    border: 1px solid #0061FF;
+    color: white;
+    padding: 8px 30px;
+    margin: 20px 15px 20px 10px;
+}
+
+.title-card-full{
+    margin-top: 19px;
+}
+
+.info-card-full{
+    display: inline-block;
+    font-size: .8rem;
+    padding: 8px 11px;
+    margin-bottom: 35px;
+}
+
+.trasparent-btn{
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    margin-left: 40px;
+}
+
+.text-partner{
+    font-size: .8rem;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.title-partner{
+    margin-left: 40px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.container-small > .col1{
+    margin-top: 55px;
+}
+
+.col1-full-card{
+    width: 35%;
+    text-align: end;
+}
+.col2-full-card{
+    width: 65%;
 }
