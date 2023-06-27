@@ -42,6 +42,10 @@ img{
     justify-content: space-between;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .align-self{
     align-self: center;
 }
@@ -344,4 +348,78 @@ h3{
 .paragraph-mini-cards{
     line-height: 20px;
     font-size: 0.85rem;
+}
+
+.central-square, .members-container{
+    width: calc(100% / 3);
+    margin-top: 40px;
+}
+
+.members-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.members-box{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.members-box img{
+    max-width: 50%;
+    filter: invert(1);
+}
+
+.central-square{
+    padding: 50px;
+    background-color: #F5F5F5;
+}
+
+.central-square img{
+    max-width: 300px;
+}
+
+.central-square hr{
+    border: 1px solid lightgray;
+    width: 100px;
+    margin-top: 35px;
+}
+
+
+.text-center-square{
+    margin-bottom: 50px;
+}
+
+#designit{
+    background-color: #A2D39B; 
+}
+
+#asu{
+    background-color: #61082B;
+}
+
+#uni-florida{
+    background-color: #0093CE;
+}
+
+#topps{
+    background-color: #FF1C1C;
+}
+
+#wb-relief{
+    background-color: #D5001F;
+}
+
+#hearst-corp{
+    background-color: #B4D0E7;
+}
+
+#lonely-planet{
+    background-color: #0D2481;
+}
+
+#clear-channel{
+    background-color: #FFD830;
 }
