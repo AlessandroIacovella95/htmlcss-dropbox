@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
 }
-body{
-    font-family:Arial, Helvetica, sans-serif;
+
+html{
+    font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -14,6 +15,9 @@ header{
     left: 0;
     right: 0;
     z-index: 10;
+}
+main{
+    padding-top: 47px;
 }
 
 img{
@@ -46,21 +50,23 @@ nav{
     align-self: center;
 }
 
-ul{
+.nav-list{
     list-style-type: none;
+    display: flex;
 }
 
-li{
+.nav-items{
     margin: 5px 10px;
     padding: 4px 10px;
     align-self: center;
 }
 
-a{
+.anchor{
     text-decoration: none;
     color: #828282;
     font-weight: 500;
     font-size: .9rem;
+    white-space: nowrap;
 }
 
 .empty{
@@ -137,13 +143,19 @@ p{
     border: 1px solid #0061FF;
     color: white;
     padding: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn.anchor{
+    margin-right: auto;
 }
 
 .btn-jumbo{
     border: 1px solid #B4D0E7;;
     background-color: #B4D0E7;
     color: black;
-    padding: 8px;
+    margin-right: auto;
 }
 
 .down-arrow{
@@ -156,7 +168,7 @@ label{
 }
 
 .cards{
-    width: calc(100% / 3 - 45px);
+    width: calc(100% / 3 - 40px);
     border: 1px solid #8C8F9E ;
 }
 
@@ -172,6 +184,10 @@ label{
 
 .title-card i{
     font-size: .8rem;
+}
+
+.body-card{
+    padding: 0 15px;
 }
 
 .body-card h3{
@@ -195,8 +211,7 @@ label{
     padding: 8px 10px;
 }
 
-.shop-now{
-    text-decoration:underline;
+.info-now{
     color: blue;
     font-size: .8rem;
 }
@@ -208,7 +223,7 @@ label{
 .empty-container{
     width: 50px;
     border-top: 1px solid gray;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .btn-cards{
@@ -217,8 +232,9 @@ label{
     border: 1px solid #0061FF;
     color: white;
     padding: 8px 30px;
-    margin-left: 10px;
     margin-bottom: 15px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .text-shop-now{
@@ -308,4 +324,24 @@ h3{
 }
 .col2-full-card{
     width: 65%;
+}
+
+.container-mini-cards{
+    flex-wrap: wrap;
+}
+
+.container-mini-cards .cards{
+    width: calc(100% / 3 - 16px);
+    border: 0;
+    margin: 20px 8px;
+}
+
+.title-mini-cards{
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.paragraph-mini-cards{
+    line-height: 20px;
+    font-size: 0.85rem;
 }

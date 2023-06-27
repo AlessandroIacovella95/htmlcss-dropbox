@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="container-full justify-between ">
         <nav>
-            <ul class="flex ">
-                <li><a href="#"><img src="./img/img/logo-small.png" alt="logo-small-dropbox"></a></li>
-                <li><a href="#">Perch&egrave; Dropbox</a></li>
-                <li><a href="#">Funzioni</a></li>
-                <li><a href="#">Piani e Prezzi</a></li>
+            <ul class=" nav-list">
+                <li class="nav-items"><a class="anchor" href="#"><img src="./img/img/logo-small.png" alt="logo-small-dropbox"></a></li>
+                <li class="nav-items"><a class="anchor" href="#">Perch&egrave; Dropbox</a></li>
+                <li class="nav-items"><a class="anchor" href="#">Funzioni</a></li>
+                <li class="nav-items"><a class="anchor" href="#">Piani e Prezzi</a></li>
             </ul>
         </nav>
         <nav>
-            <ul class="flex ">
-                <li><a href="#">Supporto</a></li>
+            <ul class=" nav-list ">
+                <li class="nav-items"><a class="anchor" href="#">Supporto</a></li>
                 <li class="empty"></li>
-                <li><a href="#">Contatta l'ufficio vendite</a></li>
+                <li class="nav-items"><a class="anchor" href="#">Contatta l'ufficio vendite</a></li>
                 <li class="empty"></li>
-                <li><a href="#">Accedi</a></li>
-                <li class=" start"><a href="#">Inizia</a></li>
+                <li class="nav-items"><a class="anchor" href="#">Accedi</a></li>
+                <li class=" nav-items start"><a class="anchor" href="#">Inizia</a></li>
             </ul>
         </nav>
     </header>
@@ -42,9 +45,9 @@
                             integrato per ottimizzare il flusso di lavoro esistente. 
                         </p>
     
-                        <a href="#"><button class="btn">Inizia la tua prova gratuita</button></a>
+                        <a href="#" class="btn anchor">Inizia la tua prova gratuita</a>
     
-                        <a href="#"><button class="btn-jumbo">Annulla in qualsiasi momento</button></a>
+                        <a href="#" class="btn-jumbo anchor">Annulla in qualsiasi momento</a>
     
                         <div class="down-arrow">&#129147;</div>
                     </div>
@@ -79,13 +82,16 @@
     
                                 <div class="direction-column">
                                     <span class="info-icon"><i class="fa-solid fa-user"></i> 1 utente</span>
-                                    <span class="info-icon"><i class="fa-solid fa-folder"></i> 5 TB di spazio d'archiviazione sicuro</span>
+                                    <div class="flex">
+                                        <span class="info-icon"><i class="fa-solid fa-folder"></i> 5 TB di spazio d'archiviazione sicuro</span>
+                                    </div>
+                                    
                                     <span class="info-icon"><i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</span>
                                 </div>
     
                                 <div class="direction-column">
-                                    <a href="#"><button class="btn-cards">Prova gratis per 30 giorni</button></a>
-                                    <span class="text-shop-now"> Oppure <a class="shop-now" href="#">acquista ora</a></span>
+                                    <a href="#" class="btn-cards">Prova gratis per 30 giorni</a>
+                                    <span class="text-shop-now"> Oppure <a class="info-now" href="#">acquista ora</a></span>
                                 </div>
     
                                 <div class="empty-container"></div>
@@ -122,8 +128,8 @@
                             </div>
     
                             <div class="direction-column">
-                                <a href="#"><button class="btn-cards">Prova gratis per 30 giorni</button></a>
-                                <span class="text-shop-now"> Oppure <a class="shop-now" href="#">acquista ora</a></span>
+                                <a href="#" class="btn-cards">Prova gratis per 30 giorni</button></a>
+                                <span class="text-shop-now"> Oppure <a class="info-now" href="#">acquista ora</a></span>
                             </div>
     
                             <div class="empty-container"></div>
@@ -159,7 +165,7 @@
                             <div class="direction-column">
                                 <h3>Enterprise</h3>
                                 <span class="price">Contattaci</span>
-                                <span class="month"></span>
+                                <span class="month">-</span>
                             </div>
     
                             <div class="direction-column">
@@ -169,8 +175,8 @@
                             </div>
     
                             <div class="direction-column">
-                                <a href="#"><button class="btn-cards">Prova gratis per 30 giorni</button></a>
-                                <span class="text-shop-now"> Oppure <a class="shop-now" href="#">acquista ora</a></span>
+                                <a href="#" class="btn-cards">Contattaci</button></a>
+                                <span class="text-shop-now"> Oppure <a class="info-now" href="#">acquista ora</a></span>
                             </div>
     
                             <div class="empty-container"></div>
@@ -191,23 +197,24 @@
                     </div>
                 </div>
 
-            <div class="container-cards">
-                <div class="full-card">
-                    <div class="title-card">
-                        <i class="fa-solid fa-building"></i>
-                        <span>Team</span>
-                    </div>
-                    <div class="flex">
-                        <div class="col2-full-card">
-                           <h3 class="title-card-full">Enterprise</h3>
-                           <h5>Contatta l'ufficio vendite per i prezzi</h5>
-                           <span class="info-card-full">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</span>
+                <div class="container-cards">
+                    <div class="full-card">
+                        <div class="title-card">
+                            <i class="fa-solid fa-building"></i>
+                            <span>Team</span>
                         </div>
-                        <div class="col1-full-card">
-                            <button class="btn-card-full">Contatta l'ufficio vendite</button>
-                        </div>     
-                    </div>        
-                </div>
+                        <div class="flex">
+                            <div class="col2-full-card">
+                               <h3 class="title-card-full">Enterprise</h3>
+                               <h5>Contatta l'ufficio vendite per i prezzi</h5>
+                               <span class="info-card-full">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</span>
+                            </div>
+                            <div class="col1-full-card">
+                                <button class="btn-card-full">Contatta l'ufficio vendite</button>
+                            </div>     
+                        </div>        
+                    </div>
+                </div>    
             </div>
         </section>
 
@@ -223,8 +230,69 @@
                     <div class="text-partner">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazioni, integrazione, gestione e supporto continui.</div>
                     <button class="trasparent-btn">Trova un partner</button>
                 </div>
+            </div>
+        </section>
 
+        <section>
+            <div class="container-small">
+                <h2>Esegui più operazioni con Dropbox Business</h2>
+                <div class="container-mini-cards flex">
+                    <div class="cards">
+                        <img src="./img/img/business-feature-switching-tools.png" alt="">
+                        <h3 class="title-mini-cards">Passa di meno da uno strumento all'altro</h3>
+                        <p class="paragraph-mini-cards">
+                            Porta a termine le attività quotidiane cin un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, File Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
 
+                    <div class="cards">
+                        <img src="./img/img/business-feature-send-files-it.png" alt="">
+                        <h3 class="title-mini-cards">Passa di meno da uno strumento all'altro</h3>
+                        <p class="paragraph-mini-cards">
+                            Porta a termine le attività quotidiane cin un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, File Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./img/img/business-feature-coordinate-it.png" alt="">
+                        <h3 class="title-mini-cards">Passa di meno da uno strumento all'altro</h3>
+                        <p class="paragraph-mini-cards">
+                            Porta a termine le attività quotidiane cin un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, File Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./img/img/business-feature-integrations-it.png" alt="">
+                        <h3 class="title-mini-cards">Passa di meno da uno strumento all'altro</h3>
+                        <p class="paragraph-mini-cards">
+                            Porta a termine le attività quotidiane cin un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, File Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./img/img/business-feature-multi-device.png" alt="">
+                        <h3 class="title-mini-cards">Passa di meno da uno strumento all'altro</h3>
+                        <p class="paragraph-mini-cards">
+                            Porta a termine le attività quotidiane cin un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, File Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./img/img/business-feature-security.png" alt="">
+                        <h3 class="title-mini-cards">Passa di meno da uno strumento all'altro</h3>
+                        <p class="paragraph-mini-cards">
+                            Porta a termine le attività quotidiane cin un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, File Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container-small">
+                <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                <a class="info-now" href="#">Scopri di più sui nostri clienti</a>
             </div>
         </section>
 
