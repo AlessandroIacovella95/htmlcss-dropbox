@@ -110,7 +110,7 @@ nav{
     margin-top: 40px;
 }
 
-.jumbo-section{
+.section-bg, .section{
     background-color: #B4D0E7;
 }
 
@@ -422,4 +422,29 @@ h3{
 
 #clear-channel{
     background-color: #FFD830;
+}
+
+.section .container-small{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #61082B;
+    padding: 40px 0;
+}
+
+.section  .col1{
+    text-align: end;
+    
+}
+
+.section .trasparent-btn{
+    text-decoration: none;
+    font-size: .85rem;
+    padding-left:35px;
+    padding-right:35px;
+    text-align: end;
 }
