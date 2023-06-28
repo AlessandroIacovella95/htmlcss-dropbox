@@ -20,6 +20,10 @@ main{
     padding-top: 47px;
 }
 
+footer{
+    background-color: black;
+}
+
 img{
     max-width: 100%;
 }
@@ -40,10 +44,6 @@ img{
 
 .justify-between{
     justify-content: space-between;
-}
-
-.flex-wrap{
-    flex-wrap: wrap;
 }
 
 .align-self{
@@ -213,6 +213,11 @@ label{
 .info-icon{
     font-size: .8rem;
     padding: 8px 10px;
+}
+
+.info-icon i{
+    padding-top: 2px;
+    padding-right: 5px;
 }
 
 .info-now{
@@ -467,3 +472,57 @@ h3{
     margin-right: 30px;
 }
 
+.footer-list{
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.footer-list h4{
+    font-size: 1.2srem;
+    padding-bottom: 15px;
+}
+
+.footer-items{
+    margin: 5px 0;
+    padding: 4px 0;
+    color: white;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: .8rem;
+    white-space: nowrap;
+}
+
+.border-bottom-footer::after{
+    content: "";
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    margin-top: 40px;
+}
+
+.footer-icon{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer-icon span{
+    font-size: .85rem;
+    color: white;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.footer-icon i{
+    font-size: .80rem;
+    color: white;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-top: 30px;
+}
