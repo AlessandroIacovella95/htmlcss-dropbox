@@ -48,6 +48,11 @@ img{
     align-self: center;
 }
 
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 nav{
     align-self: center;
 }
@@ -470,6 +475,7 @@ label{
     align-items: center;
     padding: 35px 0;
     border-bottom: 0.25px solid black;
+    position: relative;
 }
 
 .question-span span{
@@ -480,6 +486,23 @@ label{
 .question-span i{
     font-size: .8rem;
     margin-right: 30px;
+}
+
+.prova{
+    cursor: pointer;
+}
+
+.answer{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    margin-top: 20px;
+    display: none;
+}
+
+.question-span:active .answer{
+    display: block;
+    position:relative;
 }
 
 /* footer */
