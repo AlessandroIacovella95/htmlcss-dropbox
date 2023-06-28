@@ -1,3 +1,4 @@
+/* generics */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -28,10 +29,7 @@ img{
     max-width: 100%;
 }
 
-.debug{
-    border: 1px dashed black;
-}
-
+/* utils */
 .flex{
     display: flex;
 }
@@ -54,6 +52,56 @@ nav{
     align-self: center;
 }
 
+p{
+    font-size: .95rem;
+    line-height: 20px;
+}
+
+.col1{
+    width: 35%;
+    padding-top: 25px;
+}
+.col2{
+    width: 65%;
+    padding-top: 25px;
+}
+
+h2{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+h3{
+    padding: 5px 10px;
+}
+
+h5{
+    padding: 5px 10px; 
+    margin-bottom: 15px;
+}
+
+/* ! 3 container */
+
+.container-full{
+    width: 100%;
+    display: flex;
+}
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-small{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:75px;
+    margin-bottom: 40px;
+}
+
+/* nav list header */
 .nav-list{
     list-style-type: none;
     display: flex;
@@ -85,57 +133,15 @@ nav{
     color: white;
 }
 
-/* ! 3 container */
-
-.container-full{
-    width: 100%;
-    display: flex;
-}
-
-.container{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-small{
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:75px;
-    margin-bottom: 40px;
-}
-
-.container-cards{
-    margin-top: 40px;
-}
-
+/* jumbotron */
 .section-bg, .section{
     background-color: #B4D0E7;
-}
-
-.section-cards{
-    margin-top: 150px;
 }
 
 .title{
     font-size:4rem;
     font-weight: 700;
     padding-top: 50px;
-}
-
-p{
-    font-size: .95rem;
-    line-height: 20px;
-}
-
-.col1{
-    width: 35%;
-    padding-top: 25px;
-}
-.col2{
-    width: 65%;
-    padding-top: 25px;
 }
 
 .img-jumbo{
@@ -165,6 +171,15 @@ p{
 .down-arrow{
     font-size: 2.5rem;
     padding-bottom: 10px;
+}
+
+/* cards */
+.container-cards{
+    margin-top: 40px;
+}
+
+.section-cards{
+    margin-top: 150px;
 }
 
 label{
@@ -251,20 +266,6 @@ label{
     padding: 5px 10px; 
 }
 
-h5{
-    padding: 5px 10px; 
-    margin-bottom: 15px;
-}
-
-h2{
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
-h3{
-    padding: 5px 10px;
-}
-
 .flag{
     font-size: .8rem;
     font-weight: bold;
@@ -303,6 +304,15 @@ h3{
     margin-bottom: 35px;
 }
 
+.col1-full-card{
+    width: 35%;
+    text-align: end;
+}
+.col2-full-card{
+    width: 65%;
+}
+
+/* partner */
 .trasparent-btn{
     background-color: white;
     color: black;
@@ -327,14 +337,7 @@ h3{
     margin-top: 55px;
 }
 
-.col1-full-card{
-    width: 35%;
-    text-align: end;
-}
-.col2-full-card{
-    width: 65%;
-}
-
+/* mini-cards */
 .container-mini-cards{
     flex-wrap: wrap;
 }
@@ -355,6 +358,7 @@ h3{
     font-size: 0.85rem;
 }
 
+/* members-box */
 .central-square, .members-container{
     width: calc(100% / 3);
     margin-top: 40px;
@@ -367,7 +371,7 @@ h3{
 
 .members-box{
     width: 50%;
-    height: 50%;
+    aspect-ratio: 1 / 1;
     justify-content: center;
     align-items: center;
 }
@@ -396,6 +400,11 @@ h3{
     margin-bottom: 50px;
 }
 
+.members-box:hover{
+    border: 15px solid rgba(244, 241, 241, .5);
+}
+
+/* color members-box */
 #designit{
     background-color: #A2D39B; 
 }
@@ -428,6 +437,7 @@ h3{
     background-color: #FFD830;
 }
 
+/* Dropbox business */
 .section .container-small{
     margin-top: 0;
     margin-bottom: 0;
@@ -451,9 +461,9 @@ h3{
     text-align: end;
 }
 
+/* FAQ */
 #first-span{
     border-top: 0.25px solid black;
-
 }
 
 .question-span{
@@ -472,6 +482,7 @@ h3{
     margin-right: 30px;
 }
 
+/* footer */
 .footer-list{
     list-style-type: none;
     margin-top: 50px;

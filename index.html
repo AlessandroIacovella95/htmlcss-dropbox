@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="container-full justify-between ">
+        <!-- left nav list -->
         <nav>
             <ul class=" nav-list">
                 <li class="nav-items"><a class="anchor" href="#"><img src="./img/img/logo-small.png" alt="logo-small-dropbox"></a></li>
@@ -20,6 +25,7 @@
                 <li class="nav-items"><a class="anchor" href="#">Piani e Prezzi</a></li>
             </ul>
         </nav>
+        <!-- right nav list -->
         <nav>
             <ul class=" nav-list ">
                 <li class="nav-items"><a class="anchor" href="#">Supporto</a></li>
@@ -33,6 +39,7 @@
     </header>
 
     <main>
+        <!-- sezione jumbotron -->
         <section class="section-bg">
             <div class="container">
                 <div class="main-title">
@@ -57,14 +64,15 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- sezione 3 cards piano d'acquisto -->
         <section class="section-cards">
             <div class="container-small">
                 <h2>Trova il piano business che fa per te</h2>
-                <input type="radio" name="fatturazione" class="radio-type">
-                <label for="fatturazione mensile">Fatturazione Mensile</label>
-                <input type="radio" name="fatturazione">
-                <label for="fatturazione mensile">Fatturazione Annuale</label>
+                <input type="radio" name="fatturazione" id="fatturazione-mensile">
+                <label for="fatturazione-mensile">Fatturazione Mensile</label>
+                <input type="radio" name="fatturazione" id="fatturazione-annuale">
+                <label for="fatturazione-annuale">Fatturazione Annuale</label>
 
                 <div class="flex container-cards justify-between">
                     <div class="cards">
@@ -147,7 +155,7 @@
                             </div>
     
                             <div class="direction-column">
-                                <a href="#" class="btn-cards">Prova gratis per 30 giorni</button></a>
+                                <a href="#" class="btn-cards">Prova gratis per 30 giorni</a>
                                 <span class="text-shop-now"> Oppure <a class="info-now" href="#">acquista ora</a></span>
                             </div>
     
@@ -205,7 +213,7 @@
                             </div>
     
                             <div class="direction-column">
-                                <a href="#" class="btn-cards">Contattaci</button></a>
+                                <a href="#" class="btn-cards">Contattaci</a>
                                 <span class="text-shop-now"> Oppure <a class="info-now" href="#">acquista ora</a></span>
                             </div>
     
@@ -247,14 +255,13 @@
                 </div>    
             </div>
         </section>
-
+        
+        <!-- sezione partner Dropbox -->
         <section>
             <div class="container-small flex">
-
                 <div class="col2">
                     <img src="./img/img/partner.png" alt="">
                 </div>
-
                 <div class="col1">
                     <h3 class="title-partner">Entra in contatto con un partner Dropbox</h3>
                     <div class="text-partner">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazioni, integrazione, gestione e supporto continui.</div>
@@ -262,7 +269,8 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- sezioni 6 mini-cards -->
         <section>
             <div class="container-small">
                 <h2>Esegui più operazioni con Dropbox Business</h2>
@@ -315,18 +323,15 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <!-- sezione membri Dropbox -->
         <section>
             <div class="container-small">
                 <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
                 <a class="info-now" href="#">Scopri di più sui nostri clienti</a>
             </div>
-        </section>
-
-        <section>
             <div class="container-full">
                 <div class="members-container">
                     <div class="members-box flex" id="designit">
@@ -365,24 +370,25 @@
             </div>
         </section>
 
+        <!-- sezione Dropbox business -->
         <section class="section">
             <div class="container-small flex">
                 <div class="col2">
                     <h2>Porta Dropbox Business nella tua azienda</h2>
                 </div>
-
                 <div class="col1">
                     <a class="trasparent-btn" href="#">Inizia la tua prova gratuita</a>
                 </div>
             </div>
         </section>
-
+        
+        <!-- sezione FAQ -->
         <section>
             <div class="container-small">
                 <h2>Domande frequenti</h2>
                 <div class="question-span flex justify-between" id="first-span">
                     <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>   
                 </div>
                 <div class="question-span flex justify-between">
                     <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
@@ -397,63 +403,54 @@
     </main>
 
     <footer>
-        <div class="container flex justify-between">
-            <div>
-                <ul class="footer-list border-bottom-footer">
+        <!-- liste footer -->
+        <div class="container flex justify-between">    
+            <ul class="footer-list border-bottom-footer">
                     <li class="footer-items"><h4>Dropbox</h4></li>
                     <li class="footer-items"><a href="#">Applicazione desktop</a></li>
                     <li class="footer-items"><a href="#">Perché Dropbox</a></li>
                     <li class="footer-items"><a href="#">Piani</a></li>
                     <li class="footer-items"><a href="#">Sicurezza</a></li>
                     <li class="footer-items"><a href="#">Funzioni</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="footer-list">
+            </ul>
+                    
+            <ul class="footer-list">
                     <li class="footer-items"><h4>Prodotti</h4></li>
                     <li class="footer-items"><a href="#">Applicazione desktop</a></li>
                     <li class="footer-items"><a href="#">Perché Dropbox</a></li>
                     <li class="footer-items"><a href="#">Piani</a></li>
                     <li class="footer-items"><a href="#">Sicurezza</a></li>
                     <li class="footer-items"><a href="#">Funzioni</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="footer-list">
+            </ul>
+            
+            <ul class="footer-list">
                     <li class="footer-items"><h4>Azienda</h4></li>
                     <li class="footer-items"><a href="#">Applicazione desktop</a></li>
                     <li class="footer-items"><a href="#">Perché Dropbox</a></li>
                     <li class="footer-items"><a href="#">Piani</a></li>
                     <li class="footer-items"><a href="#">Sicurezza</a></li>
                     <li class="footer-items"><a href="#">Funzioni</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="footer-list">
+            </ul>
+            
+            <ul class="footer-list">
                     <li class="footer-items"><h4>Supporto</h4></li>
                     <li class="footer-items"><a href="#">Applicazione desktop</a></li>
                     <li class="footer-items"><a href="#">Perché Dropbox</a></li>
                     <li class="footer-items"><a href="#">Piani</a></li>
                     <li class="footer-items"><a href="#">Sicurezza</a></li>
                     <li class="footer-items"><a href="#">Funzioni</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="footer-list">
+            </ul>
+            
+            <ul class="footer-list">
                     <li class="footer-items"><h4>Community</h4></li>
                     <li class="footer-items"><a href="#">Applicazione desktop</a></li>
                     <li class="footer-items"><a href="#">Perché Dropbox</a></li>
                     <li class="footer-items"><a href="#">Piani</a></li>
                     <li class="footer-items"><a href="#">Sicurezza</a></li>
                     <li class="footer-items"><a href="#">Funzioni</a></li>
-                </ul>
-            </div>
+            </ul>          
         </div>
-
+        <!-- icone footer -->
         <div class="footer-icon container">
             <i class="fa-solid fa-earth-europe"></i>
             <span>Italiano</span>
